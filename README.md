@@ -126,6 +126,7 @@ This is the configuration file Nodemon reads to know how to behave when you run 
   "ext": ".ts,.js",
   "exec": "ts-node ./src/index.ts"
 }
+```
 
 | Key   | Description                                                                 |
 |-------|-----------------------------------------------------------------------------|
