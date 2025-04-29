@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    // Tells TypeScript to use modern Node.js module system (based on ES Modules).
+    // This makes sure imports and exports work the same way they do in Node.js apps.
+    "module": "NodeNext",
+
+    // Sets the root path for all your import statements in the project.
+    // Instead of writing long paths like "../../controllers", you can just use "controllers".
+    "baseUrl": "src",
+
+    // Tells TypeScript to put the compiled (converted) JavaScript files into a folder named "dist".
+    // This is the folder that will be executed when you run the app.
+    "outDir": "dist",
+
+    // Generates source maps to help developers debug the original TypeScript code 
+    // while running the compiled JavaScript in the browser or Node.js.
+    "sourceMap": true,
+
+    // Forces you to define the type of every variable or function clearly.
+    // This helps prevent unexpected behavior and makes the code safer and more readable.
+    "noImplicitAny": true
+  },
+
+  // Tells TypeScript to include (watch and compile) all files inside the "src" folder.
+  "include": ["src/**/*"]
+}
