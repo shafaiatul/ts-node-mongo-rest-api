@@ -78,7 +78,7 @@ Features:
 
 ### Prerequisites
 
-**Node version 14.x**
+**Node version 14.x or up**
 
 ### 🔧 Installing Packages
 
@@ -93,13 +93,13 @@ npm install
 
 In `src/index.ts`:
 
-```js
+
 const MONGO_URL = ''; // DB URI
 ```
 
 ### Start the app
 
-```shell
+```bash
 npm start
 ```
 
@@ -127,7 +127,10 @@ This is the configuration file Nodemon reads to know how to behave when you run 
   "exec": "ts-node ./src/index.ts"
 }
 
-Key | Description
-watch | Tells Nodemon to monitor the src folder. Any file change inside this folder triggers a restart.
-ext | File extensions to watch. Here, it looks for .ts (TypeScript) and .js (JavaScript) files.
-exec | The command Nodemon uses to run the application. Here, it runs the main file using ts-node.
+| Key   | Description                                                                 |
+|-------|-----------------------------------------------------------------------------|
+| watch | Tells Nodemon to monitor the `src` folder. Any file change inside this folder triggers a restart. |
+| ext   | File extensions to watch. Here, it looks for `.ts` (TypeScript) and `.js` (JavaScript) files.     |
+| exec  | The command Nodemon uses to run the application. Here, it runs the main file using `ts-node`.     |
+
+
